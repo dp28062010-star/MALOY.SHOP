@@ -1,0 +1,204 @@
+Вот код,
+
+напиши код
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maloy Shop</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #000;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        .hero {
+            min-height: 500px;
+            background: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        .catalog {
+            padding: 60px 50px;
+        }
+
+        .catalog h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        .product-image {
+            height: 300px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 30px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .catalog {
+                padding: 30px 20px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MALOY SHOP</div>
+
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#">Доставка</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>MALOY SHOP</h1>
+        <p>Одежда, обувь и аксессуары</p>
+        <a href="#catalog" class="button">Смотреть каталог</a>
+    </section>
+
+    <section class="catalog" id="catalog">
+        <h2>Новые товары</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <div class="product-image">
+                    Фото товара
+                </div>
+                <h3>Худи Maloy</h3>
+                <p class="price">1 999 грн</p>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    Фото товара
+                </div>
+                <h3>Кроссовки</h3>
+                <p class="price">2 999 грн</p>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    Фото товара
+                </div>
+                <h3>Аксессуары</h3>
+                <p class="price">799 грн</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Maloy Shop
+    </footer>
+
+</body>
+</html>
